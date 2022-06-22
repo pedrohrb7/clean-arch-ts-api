@@ -5,7 +5,8 @@
   "author": "Pedro <phrbrock@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:staged": "jest"
   },
   "dependencies": {},
   "devDependencies": {
