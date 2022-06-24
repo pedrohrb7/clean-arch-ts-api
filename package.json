@@ -5,8 +5,8 @@
   "author": "Pedro <phrbrock@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest",
-    "test:staged": "jest"
+    "test": "jest --passWithNoTest",
+    "test:staged": "jest --passWithNoTest"
   },
   "dependencies": {},
   "devDependencies": {
