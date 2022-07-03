@@ -16,5 +16,18 @@ describe('SignUp Controller', () => {
     }
     const httpResponse = sut.handle(httpRequest)
     expect(httpResponse.statusCode).toBe(400)
+    expect(httpResponse.body).toEqual(new Error('missing name'))
+  })
+  test('Should return 400 if no email provided', () => {
+    const sut = makeSut()
+    const httpRequest = {
+      body: {
+        name: 'teste',
+        password: 'pass',
+        passwordConfirmation: 'pass'
+      }
+    }
+    const httpResponse = sut.handle(httpRequest)
+    expect(httpResponse.statusCode).toBe(400)
   })
 })
